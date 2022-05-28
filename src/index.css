@@ -1,13 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Inter', sans-serif;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #F3F3FB;
+}
+footer article{
+    padding: 2.5rem;
+    display: flex;
+}
+footer article .logo{
+    width: 20%;
+}
+footer article .logo h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 0.18em;
+    margin-top: 1rem;
+}
+footer article .navigation{
+    width: 60%;
+}
+footer article .navigation h1{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #232323;
+    margin-bottom: 1.5rem;
+}
+footer article .navigation .nav-boxes{
+    display: flex;
+}
+footer article .navigation .nav-boxes .box{
+    width: 30%;
+}
+footer article .navigation .nav-boxes .box ul li{
+    list-style: none;
+}
+footer article .navigation .nav-boxes .box ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.0625rem;
+    line-height: 3rem;
+    color: #232323;
+
+}
+footer article .contacts h1{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #232323;
+    margin-bottom: 1.5rem;
+}
+footer article .contacts .contact-us{
+    line-height: 2rem;
+}
+footer article .contacts .contact-us .icon{
+    margin-right: 1rem;
+}
+footer article .contacts .contact-us .icon .fa{
+    color: #0177F9;
+}
+footer article .contacts .socials{
+    margin-top: 1rem;
+}
+footer article .contacts .fa-brand{
+    color: #fff;
+    margin-right: 0.8rem;
+    padding: 8px;
+    font-size: 20px;
+    background-color: #97CEE8;
+}
+footer article .contacts .fa-brand:hover{
+    background-color: #0177F9;
+}
+footer .credits{
+    width: 100%;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+footer .credits span{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #A1A1A1;
+    opacity: 0.6;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+@media screen and (max-width: 1000px) {
+    
+    footer article{
+        padding: 2.5rem;
+        flex-flow: column wrap;
+    }
+    footer article .logo h1{
+        margin-bottom: 2rem;
+    }
+    footer article .navigation{
+        width: 100%;
+    }
+    footer article .navigation .nav-boxes{
+        width: 100%;
+        flex-flow: row wrap;
+    }
+    footer article .navigation .nav-boxes .box{
+        width: 40%;
+        margin-bottom: 1rem;
+    }
+    footer article .contacts h1{
+        margin-top: 1rem;
+    }
+    footer .credits{
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .credits span{
+        margin-bottom: 1rem;
+    }
 }

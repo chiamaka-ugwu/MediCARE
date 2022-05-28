@@ -1,0 +1,58 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import image from './download.jpg';
+
+
+
+
+// Variables
+const first = {
+    img : "(./download.png)",
+    title: "I Love You to the Moon and Back",
+    author: "Amelia Hepworth"
+}
+
+const second = {
+    img: "(.\download.jpg)",
+    title: "Our Class is a Family",
+    author: "Shannon Olsen"
+}
+
+
+const Book = (props) => {
+    const clickHandler = () => {
+        alert("hello world")
+    }
+    return (
+        <div className='book'>
+            <img src = {image} alt="image" />
+            <h1>{props.title}</h1>
+            <h4>{props.author}</h4>
+            <button type='button' onClick={clickHandler()}>Click</button>
+        </div>
+    )
+}
+
+
+function Booklist() {
+    return(
+        <>
+            <Book 
+                img = {first.img}
+                title = {first.title}
+                author = {first.author}
+            >
+            </Book>
+            <Book 
+                img = {second.img}
+                title = {second.title}
+                author = {second.author}
+            />
+        </>
+    )
+}
+
+
+
+ReactDOM.render(<Booklist/>, document.getElementById('root'));
